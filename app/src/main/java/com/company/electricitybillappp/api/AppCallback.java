@@ -23,6 +23,7 @@ public class AppCallback<T> implements Callback<T> {
 
     @Override
     public void onFailure(Call<T> call, Throwable t) {
+        t.printStackTrace();
         ((MutableLiveData<AppError>)errorLiveData).postValue(new AppError());
     }
 }

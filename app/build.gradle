@@ -25,7 +25,7 @@ android {
     flavorDimensions "default"
     productFlavors {
         development {
-            buildConfigField "String", "BASE_URL", '"http"://'
+            buildConfigField "String", "BASE_URL", '"http://103.251.43.139"'
         }
     }
 }

@@ -17,6 +17,8 @@ public class NetworkManager {
     private static final int    TIME_OUT                 = 30;
     private static final String BEARER                   = "Bearer";
     private static final String AUTHORIZATION            = "Authorization";
+    private static  final String CONTENT_TYPE_LABEL  = "Content-Type";
+    private static final String CONTENT_TYPE             = "application/x-www-form-urlencoded";
     private final ApiService apiService;
     private final Context context;
 
@@ -64,7 +66,7 @@ public class NetworkManager {
                     request = chain.request().newBuilder().build();
                 }
             } else {*/
-            request = chain.request().newBuilder()
+            request = chain.request().newBuilder().addHeader(CONTENT_TYPE_LABEL, CONTENT_TYPE)
                     .build();
             //}
             return chain.proceed(request);

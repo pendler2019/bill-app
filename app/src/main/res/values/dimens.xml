@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_common_margin">16dp</dimen>
+    <dimen name="match_constrain">0dp</dimen>
+    <dimen name="corner_radius">4dp</dimen>
+</resources>
